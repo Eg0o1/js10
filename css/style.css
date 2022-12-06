@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+body {
+    background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container {
+    display: flex;
+    gap: 200px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.face {
+    background-image: url(/interactive-card-details-form-main/images/bg-card-front.png);
+    margin-left: -165px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px;
+    color: #fff;
+    height: 185px;
+}
+.face .input {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+}
+.face .footer {
+    display: flex;
+    justify-content: space-between;
+}
+.back {
+    background-image: url(/interactive-card-details-form-main/images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px;
+    color: #fff;
+    height: 185px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.div #lab {
+    font-size: 12px;
+    color: red;
+}
+.div .labels {
+    display: flex;
+    gap: 42px;
+    font-size: 12px;
+}
+.div .labels2 {
+    font-size: 12px;
+    display: flex;
+    gap: 65px;
+    color: red;
+}
+.div input {
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 10px;
+}
+.div input::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+.second {
+    display: flex;
+    gap: 5px;
+}
+.mm-yy {
+    display: flex;
+    gap: 20px;
+    
+}
+.mm-yy .m {
+    width: 40px;
+}
+#confirm {
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px ;
+    margin-top: 40px;
+    width: 100%;
+}
+#confirm:hover {
+    cursor: pointer;
+    background-color:hsl(279, 6%, 55%);
+}
+.complete {
+    text-align: center;
+}
+.con {
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px ;
+    margin-top: 40px;
+    width: 100%;
+}
+.hide {
+    display: none;
+}
+@media (max-width: 670px)
+{
+    body {
+        background-image: url(/interactive-card-details-form-main/images/bg-main-mobile.png);
+        background-size: 100%;
+    }
+    .container {
+        flex-direction: column;
+        gap: 120px;
+    }
+    .cards {
+        flex-direction: column-reverse;
+        position: relative;
+        align-items: flex-end;
+    }
+    .face {
+        width: 250px;
+        height: 130px;
+        gap: 25px;
+        margin: 0;
+        z-index: 3;
+        position: absolute;
+        top: -65px;
+        left: 15px;
+    }
+    .face .input {
+        font-size: 15px;
+    }
+    .back {
+        height: 130px;
+        width: 250px;
+        position: absolute;
+    }
+}
